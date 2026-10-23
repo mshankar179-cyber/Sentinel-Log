@@ -55,13 +55,10 @@ These detections currently operate against the project's supported log formats. 
 
 ```text
 SentinelLog/
-├── docs/
-├── reports/
 ├── rules/
 │   ├── authentication.yaml
 │   └── ssh.yaml
 ├── sample_logs/
-├── screenshots/
 ├── src/
 │   ├── cli.py
 │   ├── detector.py
@@ -71,7 +68,6 @@ SentinelLog/
 │   ├── reporter.py
 │   ├── rule_loader.py
 │   └── severity.py
-├── tests/
 ├── .gitignore
 ├── README.md
 └── requirements.txt

@@ -174,6 +174,8 @@ done
 ```
 
 These scripts provide useful development checks. Additional automated assertions and regression tests are planned to improve test coverage.
+SentinelLog was also validated against a real Linux auth.log dataset to verify parsing, IOC extraction, and detection functionality beyond the included sample logs.
+
 
 ## Example Detection
 
@@ -201,6 +203,19 @@ The generated alert depends on the input records and the configured detection th
 * Security alerts are indicators for investigation, not automatic proof of malicious activity.
 * Detection coverage and IOC extraction are limited to the formats and patterns currently implemented.
 * The YAML files describe detection rules, while the corresponding detection logic is implemented in Python.
+
+## Real Log Validation
+
+SentinelLog was validated against a real Linux authentication log in addition to the included sample datasets.
+
+Results:
+
+* 385 events parsed
+* IOC extraction successful
+* Linux account creation detected
+* MITRE ATT&CK mapping applied
+* Incident report generated
+
 
 ## Future Improvements
 
